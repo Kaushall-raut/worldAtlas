@@ -5,7 +5,7 @@ export const ErrorPage = () => {
   //   console.log(error);
 
   return (
-    <section className="container flex middle">
+    <section className=" flex middle error-page">
       <h1 className="text-size">Page Not Found</h1>
       <p>{error.data}</p>
       <NavLink to={"/"}>
