@@ -88,8 +88,13 @@ header {
     height: 8rem;
   }
 
+  & .active {
+    color: #2e86c1;
+  }
+
   & h1 {
     font-size: 3rem;
+    color: white;
   }
 
   & ul {
@@ -165,5 +170,71 @@ main {
     /* height: 20rem; */
     padding: 1rem;
     /* font-size: 0.2rem; */
+  }
+}
+
+/* about page css */
+/* clamp is used to make font size more responsive */
+
+.about-section {
+  .about-title {
+    h2 {
+      font-size: clamp(2rem, 8vw, 4rem);
+      text-align: center;
+      margin: 2rem 0;
+    }
+  }
+
+  .cards {
+    /* border: 1px solid red; */
+
+    max-width: 55rem;
+    width: 100%;
+    /* border: #fff 1px solid; */
+    border-radius: 50px;
+    /* height: 30rem; */
+    margin: 0rem auto;
+    padding: 1rem 3rem;
+    /* margin-inline: auto; */
+    /* grid-template-columns: repeat(3,1fr); */
+
+    box-shadow: rgba(191, 180, 187, 0.4) 2px 1px 10px,
+      rgba(43, 38, 41, 0.3) 10px 1px, rgba(240, 46, 170, 0.2) 0px 3px,
+      rgba(240, 46, 170, 0.1) 10px 0px 10px, rgba(240, 46, 170, 0.05) 0px 0px;
+  }
+
+  .about-cards {
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 3rem;
+    /* margin: auto; */
+
+    p {
+      font-size: clamp(1rem, 6vw, 1.7rem);
+      padding: 0 0.1rem;
+      /* color: rgba(255, 255, 255, 0.5); */
+
+      span {
+        color: rgba(255, 255, 255, 0.5);
+        /* margin: 1rem 0; */
+        font-size: 2rem;
+        line-height: 1.5;
+      }
+    }
+
+    .countryName {
+      font-size: clamp(1rem, 6vw, 3rem);
+      /* color: red; */
+    }
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .about-section {
+    .about-cards {
+      grid-template-columns: repeat(2, 1fr);
+      /* gap: 2rem; */
+      margin: 0 2rem;
+    }
   }
 }

@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 export const Header = () => {
   return (
     <header>
-      <div className="container grid navGrid-col2 ">
+      <div className="container grid navGrid-col2  ">
         <NavLink to={"/"}>
           <h1> WorldAtlas</h1>
         </NavLink>
