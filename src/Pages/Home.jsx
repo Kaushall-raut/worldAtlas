@@ -1,5 +1,6 @@
 import { HeroContent } from "../components/HeroContent";
 import { Image } from "../components/Image";
+import { About } from "./About";
 
 export const Home = () => {
   return (
@@ -10,6 +11,7 @@ export const Home = () => {
           <Image />
         </div>
       </div>
+      <About />
     </main>
   );
 };
