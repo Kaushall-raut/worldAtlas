@@ -123,6 +123,19 @@ header {
   }
 }
 
+.ham-menu {
+  display: none;
+  button {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 998px) {
+
+
+
+}
+
 main {
   .container {
     grid-template-columns: 1fr 1fr;
@@ -534,7 +547,7 @@ footer {
     outline: none;
     border: 0;
 
-    &:hover{
+    &:hover {
       border: 1px solid white;
     }
     /* border: 0px outset inset rgb(56, 54, 54); */
