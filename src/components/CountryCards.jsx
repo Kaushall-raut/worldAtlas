@@ -6,7 +6,7 @@ export const CountryCards = ({ currentValue }) => {
   const { flags, name, population, region, capital } = currentValue;
 
   //   console.log(capital);
-//   console.log(capital);
+  //   console.log(capital);
 
   return (
     <li className="country-container ">
@@ -37,7 +37,9 @@ export const CountryCards = ({ currentValue }) => {
           </span>
         </p>
         <NavLink to={`/country/${name.common}`}>
-          <button className="flex">Read more <FaArrowRight/></button>
+          <button className="flex">
+            Read more <FaArrowRight />
+          </button>
         </NavLink>
       </div>
     </li>
