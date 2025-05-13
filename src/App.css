@@ -476,3 +476,46 @@ footer {
     justify-content: center;
   }
 }
+
+/* countrydetail css */
+
+.card-container {
+  padding: 1rem 0;
+  margin: 2rem auto;
+  height: 45rem;
+  background-color: #38363692;
+  border-radius: 20px;
+  grid-template-columns: 0.5fr 1fr;
+
+  img {
+    margin: 1rem 4rem;
+    width: 40rem;
+  }
+
+  h4 {
+    font-size: 5rem;
+  }
+  p {
+    margin: 1rem 0;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 2rem;
+    span {
+      color: white;
+    }
+  }
+  button {
+    margin: 1rem;
+    max-width: 10rem;
+    /* width: 10rem; */
+    font-size: 1.4rem;
+    font-weight: 900;
+    padding: 0;
+    height: 4rem;
+    border: 1px outset white;
+    /* border: 0; */
+    /* outline: none; */
+    &:hover{
+      border: 2px solid white;
+    }
+  }
+}
